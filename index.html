@@ -9,17 +9,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body style="background: #212529;">
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="background: linear-gradient(rgb(99,99,99) 0%, rgb(33,37,41) 100%);padding: 21px;margin: 0px;filter: sepia(0%);">
-        <div class="container"><a class="navbar-brand logo" href="#">Janus Quek</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects-grid-cards.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="hire-me.html">Hire me</a></li>
+<body style="background: #ffffff;">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar gradient" style="padding: 21px;margin: 0px;filter: blur(0px) brightness(100%) contrast(100%) sepia(0%);background: var(--white);opacity: 1;">
+        <div class="container"><a class="navbar-brand logo" href="#" style="color: var(--gray-dark);">Janus Quek</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="color: rgb(0,0,0);">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html" style="color: var(--gray-dark);">Home</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#" style="color: var(--gray-dark);">Projects</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Howl: A Tale of Wolves</a><a class="dropdown-item" href="#">Spellthief</a><a class="dropdown-item" href="../trojan/">Trojan</a><a class="dropdown-item" href="#">Monetary Mortality</a><a class="dropdown-item" href="#">MindWorks!</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../cv.html" style="color: var(--gray-dark);">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../hire-me.html" style="color: var(--gray-dark);">Contact me</a></li>
                 </ul>
             </div>
         </div>
@@ -29,56 +32,53 @@
             <div class="container">
                 <div class="avatar" style="background: url(&quot;assets/img/avatars/1595837754659.jpg&quot;) center / contain;"></div>
                 <div class="about-me">
-                    <p style="color: rgb(255,255,255);">I am <strong>Janus Quek</strong>. I work as a user interface and UX designer. I have a passion for minimalism and efficiency.</p><a class="btn btn-outline-primary" role="button" href="#" style="color: rgb(255,255,255);border-color: var(--blue);background: var(--blue);">Hire me</a>
+                    <p style="color: rgb(255,255,255);">I am <strong>Janus Quek</strong>. I am a UI/UX designer with a passion for minimalism and efficiency.</p>
                 </div>
             </div>
         </section>
         <section class="portfolio-block photography">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="assets/img/LogoBlack.png" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;);margin-top: 44px;"></a></div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover" style="background: rgb(255,255,255);"><a href="#"><img class="img-fluid image" src="assets/img/nature/Howl_Logo.jpg" style="margin-top: 8px;"></a></div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="assets/img/main_login.png" style="height: 240px;"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="trojan/"><img class="img-fluid image" src="assets/img/GamePoster.png" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;);margin-top: 0px;height: 240px;"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover" style="background: rgb(255,255,255);"><a href="#"><img class="img-fluid image" src="assets/img/nature/Howl_Logo.jpg" style="height: 240px;"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="assets/img/logo.png" style="height: 240px;"></a></div>
                 </div>
             </div>
         </section>
         <section class="portfolio-block call-to-action border-bottom">
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center content">
-                    <h3 style="color: rgb(255,255,255);">Like what you see?</h3><button class="btn btn-outline-primary btn-lg" type="button" style="color: rgb(255,255,255);border-color: var(--blue);background: var(--blue);">Hire me</button>
+                    <h3 style="color: rgb(255,255,255);">Like what you see?</h3><button class="btn btn-outline-primary btn-lg" type="button" style="color: rgb(255,255,255);border-color: var(--blue);background: var(--blue);margin-bottom: 6px;">Hire me</button>
                 </div>
             </div>
         </section>
-        <section class="portfolio-block skills">
+        <section class="portfolio-block skills" style="background: rgba(255,255,255,0);">
             <div class="container">
                 <div class="heading">
-                    <h2 style="color: rgb(255,255,255);">Special Skills</h2>
+                    <h2 style="color: rgb(255,255,255);">WHAT I DO</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
+                        <div class="card special-skill-item border-0" style="background: rgba(62,62,62,0);color: #212529;">
                             <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
                             <div class="card-body">
-                                <h3 class="card-title">Interface Design</h3>
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                <h3 class="card-title" style="color: var(--light);">Interface Design</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
+                        <div class="card special-skill-item border-0" style="background: rgba(62,62,62,0);color: #212529;">
                             <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline"></i></div>
                             <div class="card-body">
-                                <h3 class="card-title">Gameplay UX Design</h3>
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                <h3 class="card-title" style="color: var(--light);">UX Design</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
+                        <div class="card special-skill-item border-0" style="background: rgba(62,62,62,0);">
                             <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline"></i></div>
                             <div class="card-body">
-                                <h3 class="card-title">C# Language Scripting</h3>
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                <h3 class="card-title" style="color: var(--light);">Prototyping</h3>
                             </div>
                         </div>
                     </div>
