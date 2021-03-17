@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Forge Engine - Janus</title>
-    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css?h=9e2f2f7964efe8968a80b0bf55661c42">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="../../assets/css/2-columns-media-image-video-carousel-map.css">
-    <link rel="stylesheet" href="../../assets/css/Bold-BS4-Image-Caption-Hover-Effect-3.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css?h=320bd0471c3e8d6b9dd55c98e185506c">
+    <link rel="stylesheet" href="../../assets/css/2-columns-media-image-video-carousel-map.css?h=a4318cd0aa8e0a7ab71867672e4c52e1">
+    <link rel="stylesheet" href="../../assets/css/Bold-BS4-Image-Caption-Hover-Effect-3.css?h=1c5852532269f7f368b453aa7cb1e1ac">
+    <link rel="stylesheet" href="../../assets/css/Video-Responsive.css?h=6b256dd00c3de05273474840195f316a">
 </head>
 
 <body style="background: rgb(0,0,0);color: rgb(255,255,255);">
@@ -29,13 +30,13 @@
             </div>
         </div>
     </nav>
-    <header class="masthead" style="background: url(&quot;../../assets/img/forge-engine-banner.png&quot;) top left / cover;">
+    <header class="masthead" style="background: url(&quot;../../assets/img/forge-engine-banner.png?h=4ad2a70243919297b216c14f52fbcc0f&quot;) bottom / cover;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="post-heading">
-                        <h1>Forge Engine</h1>
+                    <div class="post-heading" style="padding-top: 100px;padding-bottom: 100px;">
+                        <h1 style="text-align: left;">Forge Engine</h1>
                     </div>
                 </div>
             </div>
@@ -45,15 +46,64 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
-                    <p>Forge Engine is a game engine created to develop a Year 2 and Year 3 game project.</p>
-                    <p>It is also the game engine that came after Beta Engine, so I could take the opportunity to improve on what features I had implemented back then.</p>
-                    <p>WIP</p>
+                    <div class="video-container"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Thzyh-l_c0A?autoplay=1&amp;mute=1"></iframe></div>
+                    <p style="font-family: 'Open Sans', sans-serif;">Forge Engine is a game engine created to develop a Year 2 and Year 3 game project.</p>
+                    <p style="font-family: 'Open Sans', sans-serif;">It is also the game engine that came after Beta Engine, so I could take the opportunity to improve on what features I had implemented back then.</p>
+                    <p style="font-family: 'Open Sans', sans-serif;">Howl: A Tale of Wolves, a DigiPen award-winning game, was created with Forge Engine.</p>
+                    <p style="font-family: 'Open Sans', sans-serif;">Here are some of the tools I developed for Forge Engine:</p>
                     <h2 class="section-heading">C# Scripting API &amp; Integration</h2>
-                    <p>WIP</p>
+                    <div class="hover hover-3 text-white rounded"><img src="../../assets/img/Howl%20Script.png?h=8522797d183a4d7863f36d1ca464a357" alt="image">
+                        <div class="hover-overlay"></div>
+                        <div class="hover-3-content px-5 py-4">
+                            <p class="hover-3-description font-weight-light mb-0" style="margin-top: 0px;font-family: 'Open Sans', sans-serif;">Just like in Unity</p>
+                        </div>
+                    </div>
+                    <p style="font-family: 'Open Sans', sans-serif;">One feature that Forge Engine has that stands out over Beta Engine is C# scripting support. It follows Unity's C# scripting API for the most part when it comes to function names. keywords and behaviors (Start, Update, OnDestroy).&nbsp;</p>
+                    <p style="font-family: 'Open Sans', sans-serif;">Many features seen in Unity C# scripting are supported, including OnCollision/Triggers, co-routines, and getting of other components/scripts.</p>
+                    <h2 class="section-heading" style="font-size: 30px;">Why</h2>
+                    <p style="font-family: 'Open Sans', sans-serif;">When developing for Spellthief in Beta Engine, there were overhead when it came to developing gameplay and UI behaviors, as every single change in code required a recompile via Visual Studios.<br></p>
+                    <p style="font-family: 'Open Sans', sans-serif;">This overhead was not a big deal as all members working on Spellthief were technical people; we could recompile the project any time without any supervision. However, Forge Engine is also going to be used by designers. Getting them to recompile the project in Visual Studios can be a very time-consuming task.</p>
+                    <p style="font-family: 'Open Sans', sans-serif;">Hence came the decision to implement a scripting API that the designers would be most familiar with: Unity's C# scripting.&nbsp;</p>
                     <h2 class="section-heading">Prefab Interface</h2>
-                    <p>WIP</p>
+                    <div class="hover hover-3 text-white rounded"><img class="img-fluid" src="../../assets/img/forge-prefab.gif?h=ce51e8591bc685408a1a13a0755affe6" alt="image">
+                        <div class="hover-overlay"></div>
+                        <div class="hover-3-content px-5 py-4">
+                            <p class="hover-3-description font-weight-light mb-0" style="margin-top: 0px;font-family: 'Open Sans', sans-serif;">Here, we see apply and unlink in action</p>
+                        </div>
+                    </div>
+                    <p style="font-family: 'Open Sans', sans-serif;">Forge Engine's prefab system supports most of what Unity's prefabs would support: applying, reverting, and unlinking. Linking is just a fun little function that links a transform to a prefab, essentially replacing it with an instance of the prefab.</p>
+                    <h2 class="section-heading" style="font-size: 30px;">Why</h2>
+                    <p style="font-family: 'Open Sans', sans-serif;">Beta Engine had a prefab tiler, which was sufficient for Spellthief as tilesets were used to build its levels. However, without using tilesets, the tiling functionality was useless. Instead, a need to save an object and all of its children as a prefab, duplicating it all over scenes, and having it retroactively change to replicate its master copy were required.</p>
+                    <p style="font-family: 'Open Sans', sans-serif;">As Unity, a successful commercial game engine, had also implemented a prefab system, I decided to recreate most of their prefab system's features in Forge Engine.</p>
                     <h2 class="section-heading">File I/O API</h2>
-                    <p>WIP</p>
+                    <div class="row">
+                        <div class="col-md-6 mb-lg-0" style="padding: 10px;">
+                            <div class="hover hover-3 text-white rounded"><img src="../../assets/img/file%20io%20before.png?h=4892346245916bb0b371eb83ffb91ac7" alt="image">
+                                <div class="hover-overlay"></div>
+                                <div class="hover-3-content px-5 py-4">
+                                    <p class="hover-3-description font-weight-light mb-0" style="margin-top: 0;font-family: 'Open Sans', sans-serif;">Before, in Beta Engine</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-lg-0" style="padding: 10px;">
+                            <div class="hover hover-3 text-white rounded"><img src="../../assets/img/file%20io%20after.png?h=d29cffd7d1d8076657a21ce7d8d084ec" alt="image">
+                                <div class="hover-overlay"></div>
+                                <div class="hover-3-content px-5 py-4">
+                                    <p class="hover-3-description font-weight-light mb-0" style="margin-top: 0;font-family: 'Open Sans', sans-serif;">After, in Forge Engine</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-family: 'Open Sans', sans-serif;">In Beta Engine, there was no file I/O API. As seen in the left image above, users who wanted to serialize their components had to literally type out tabs, new lines, opening and closing braces, etc. With provided feedback from users, I developed a robust file I/O API that can easily serialize and deserialize data.</p>
+                    <div class="hover hover-3 text-white rounded" style="padding-bottom: 250px;"><img class="img-fluid" src="../../assets/img/forge%20auto%20config.png?h=3954cc81f4ffa34334da835cbdf89c5f" alt="image">
+                        <div class="hover-overlay"></div>
+                        <div class="hover-3-content px-5 py-4">
+                            <p class="hover-3-description font-weight-light mb-0" style="margin-top: 0px;font-family: 'Open Sans', sans-serif;">No file paths, just a system name, property name and a value</p>
+                        </div>
+                    </div>
+                    <p style="font-family: 'Open Sans', sans-serif;">In addition, I developed a Config Manager that can easily get and set properties without the users having to deal with file paths. They just have to state whether is it per project, user, project x user, or app data.</p>
+                    <h2 class="section-heading" style="font-size: 30px;">Why</h2>
+                    <p style="font-family: 'Open Sans', sans-serif;">When building APIs, the goal is to make life easy for the users. This file I/O API saves a lot of time and thinking when trying to read and write data to files.</p>
                 </div>
             </div>
         </div>
@@ -66,15 +116,15 @@
                         <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x" style="color: rgb(33,37,41);"></i><a href="https://www.linkedin.com/in/janus-quek/"><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a></span></li>
                         <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x" style="color: rgb(33, 37, 41);"></i><a href="https://github.com/Viverea"><i class="fa fa-github fa-stack-1x fa-inverse"></i></a></span></li>
                     </ul>
-                    <p class="text-muted copyright">Copyright&nbsp;©&nbsp;Janus 2021</p>
+                    <p class="text-muted copyright" style="font-family: 'Open Sans', sans-serif;">Copyright&nbsp;©&nbsp;Janus 2021</p>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="../../assets/js/jquery.min.js"></script>
-    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/2-columns-media-image-video-carousel-map.js"></script>
-    <script src="../../assets/js/clean-blog.js"></script>
+    <script src="../../assets/js/jquery.min.js?h=89312d34339dcd686309fe284b3f226f"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js?h=ba42258394f86cd7822f0e850e2d60b1"></script>
+    <script src="../../assets/js/2-columns-media-image-video-carousel-map.js?h=bc336573c29dd6cef9a547d30ca17cdf"></script>
+    <script src="../../assets/js/clean-blog.js?h=5c5da44b414001c67a91a5784fe4f011"></script>
 </body>
 
 </html>
