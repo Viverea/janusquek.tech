@@ -96,3 +96,11 @@
   }
 }
 
+a:hover {
+  color: blue;
+}
+
+a {
+  color: #007bff;
+}
+
